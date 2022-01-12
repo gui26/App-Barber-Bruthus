@@ -10,7 +10,9 @@ export const styles = StyleSheet.create({
     width: "70%",
     height:50,
     borderBottomWidth: 1,
-    marginTop: 15
+    borderColor:'white',
+    marginTop: 15,
+    color:'white',
   },
   view: {
     flex: 1,
@@ -18,6 +20,14 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: '#1C1D26',
-    color:'white'
+    color:'white',
+    backgroundColor: "#01afec"
+},
+img:{
+  width:130,
+  height:200
+},
+btn:{
+  width:100
 }
 });

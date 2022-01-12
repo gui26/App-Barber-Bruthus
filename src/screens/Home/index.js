@@ -45,8 +45,8 @@ export function Home(){
               source={item.image}
               name={item.name}
               avaliation={item.avaliation}
-              Button 
-             
+              
+             onPress={()=>navigation.navigate('Login')}
         
             />
 

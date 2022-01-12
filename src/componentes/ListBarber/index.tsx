@@ -42,12 +42,14 @@ export function ListBarber(props: Props ){
                           fontSize:12}}>{props.avaliation} </Text>
                   </View>
 
-               <TouchableOpacity style={{
+               <TouchableOpacity 
+               onPress={props.onPress}
+               style={{
                  borderWidth: 1,
                  borderRadius:10,
                  borderColor: "#01afec",
                  alignItems:'center',
-                 width:"70%"
+                 width:100
                }}>
                  <Text style={{ color:"#01afec",}}>Ver Perfil</Text>
                </TouchableOpacity>
