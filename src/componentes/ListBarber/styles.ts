@@ -22,5 +22,14 @@ export const styles = StyleSheet.create({
     alignItems:'center',
     borderRadius:10
 
+  },
+  name:{
+    fontWeight:'700',
+    fontSize:15,
+    marginRight:25
+  },
+  info:{
+    alignItems:'flex-start',
+    marginRight:35
   }
 });

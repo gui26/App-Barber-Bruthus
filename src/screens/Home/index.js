@@ -1,10 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
-import React, { useState,useEffect} from 'react';
+import React, { useState,useEffect, Children} from 'react';
 import {
   Button,
   Text,
   View,
-  FlatList
+  FlatList,
+  SafeAreaView
   
 } from 'react-native';
 import { FiSearch } from 'react-icons/fi';
@@ -31,23 +32,31 @@ export function Home(){
             <FiSearch size={27} color='white' />
         </View>
     
-        <FlatList
-        data={Barbers2}
-        style={styles.list}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-
-          <ListBarber
-          source={item.image}
-          name={item.name}
-          avaliation={item.avaliation}
     
-         />
+    
+    <SafeAreaView style={{ width:'100%'}}>
+        <FlatList
+            data={Barbers2}
+            style={styles.list}
+            keyExtractor={(item) => item.id}
+            renderItem={({ item }) => (
 
-        )} />
-
-
+              <ListBarber
+              source={item.image}
+              name={item.name}
+              avaliation={item.avaliation}
+              Button 
+             
         
+            />
+
+            )} />
+
+    </SafeAreaView>
+        
+
+
+    
         
       <Text>Home</Text>
       <Button title='Clique aqui' onPress={MudarTela}/>

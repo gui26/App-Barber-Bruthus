@@ -8,10 +8,11 @@ export const styles = StyleSheet.create({
    
   },
   header:{
+    width:"80%",
     marginTop: getStatusBarHeight() + 45,
     justifyContent:'space-between',
     flexDirection:'row',
-    marginHorizontal:24,
+    marginHorizontal:15,
     alignItems:'center'
   },
   title:{

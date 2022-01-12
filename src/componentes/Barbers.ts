@@ -11,26 +11,26 @@ export default [
         id: 1,
         name: 'Jhonatan lemos',
         image: Jhonatan,
-        avalition:5
+        avaliation:'4.5'
     },
 
     {
         id: 2,
         name: 'Atila Marck',
         image: Atila,
-        avalition:4
+        avaliation:'4.5'
     },
     {
         id: 3,
         name: 'Felipe Medeiros',
         image: Felipe,
-        avalition:4
+        avaliation:'3.5'
     },
 
     {
         id: 4,
         name: 'Talisson',
         image: Talison,
-        avalition:4
+        avaliation:'5'
     }
 ]
