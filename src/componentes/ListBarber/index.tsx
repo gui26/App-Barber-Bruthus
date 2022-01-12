@@ -1,18 +1,12 @@
 import React from 'react';
-import { useState } from 'react';
-import Atila from '../../../assets/Atila.jpeg'
 import {
   View,
   Text,
   Image,
   TouchableOpacity,
-  TouchableOpacityBase
 } from 'react-native';
-import  Barbers  from '../Barbers';
 import { Rating} from 'react-native-elements'
-
 import { styles } from './styles';
-import { Button } from 'react-native-elements/dist/buttons/Button';
 
 type Props = {
     name:string
